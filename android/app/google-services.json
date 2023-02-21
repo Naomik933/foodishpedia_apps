@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "937693531269",
+    "project_id": "foodishpedia-apps",
+    "storage_bucket": "foodishpedia-apps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:937693531269:android:b0b118c68b30964460adec",
+        "android_client_info": {
+          "package_name": "com.example.foodishpedia_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "937693531269-d3livijul6a4m5t5m6k6fgn1sv9ggsgd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.foodishpedia_app",
+            "certificate_hash": "d387568347785dbbfcfe440dd3194a00a0fd7a4d"
+          }
+        },
+        {
+          "client_id": "937693531269-j4gakbb0kstmnhlbo599uldejl86g9r4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbxaPXcYGmmAH5faG8TncprKBTl1nCZxc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "937693531269-j4gakbb0kstmnhlbo599uldejl86g9r4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+    <base href="foodishpedia_app" />
+
+    <meta charset="UTF-8" />
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+    <meta name="description" content="A new Flutter project." />
+
+    <!-- iOS meta tags & icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="foodishpedia_app" />
+    <link rel="apple-touch-icon" href="icons/Icon-192.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <title>foodishpedia_app</title>
+    <link rel="manifest" href="manifest.json" />
+
+    <script>
+      // The value below is injected by flutter build, do not touch.
+      var serviceWorkerVersion = null;
+    </script>
+    <!-- This script adds the flutter initialization JS code -->
+    <script src="flutter.js" defer=""></script>
+    <link rel="stylesheet" type="text/css" href="splash/style.css" />
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+      name="viewport"
+    />
+    <!-- local -->
+    <script src="splash/splash.js"></script>
+    <meta
+      name="google-signin-client_id"
+      content="937693531269-ln6431gumabuocgi8b6qhvjn321oerch.apps.googleusercontent.com"
+    />
+    <!-- hosting -->
+    <!-- <meta
+      name="google-signin-client_id"
+      content="937693531269-brmf0skdq2qirio7fihosbupgqepnevo.apps.googleusercontent.com"
+    /> -->
+  </head>
+  <body>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "firebase/app";
+      import { getAnalytics } from "firebase/analytics";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyD2wV-Htawcps_GpJbj5ItVNFvtSc2mYuk",
+        authDomain: "foodishpedia-apps.firebaseapp.com",
+        projectId: "foodishpedia-apps",
+        storageBucket: "foodishpedia-apps.appspot.com",
+        messagingSenderId: "937693531269",
+        appId: "1:937693531269:web:199c918fe757d2b660adec",
+        measurementId: "G-R90665PEJQ",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+    <script>
+      window.addEventListener("load", function (ev) {
+        // Download main.dart.js
+        _flutter.loader
+          .loadEntrypoint({
+            serviceWorker: {
+              serviceWorkerVersion: serviceWorkerVersion,
+            },
+          })
+          .then(function (engineInitializer) {
+            return engineInitializer.initializeEngine();
+          })
+          .then(function (appRunner) {
+            return appRunner.runApp();
+          });
+      });
+    </script>
+  </body>
+</html>
